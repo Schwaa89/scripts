@@ -1,0 +1,14 @@
+[root@tx1310-1:~] esxcli software sources profile list -d /vmfs/volumes/SanDiskSSD/VMware-ESXi-6.7.0-14320388-Fujitsu-v480-1-offline_bundle.zip
+
+
+Name                                           Vendor   Acceptance Level  Creation Time        Modification Time
+---------------------------------------------  -------  ----------------  -------------------  -------------------
+Fujitsu-VMvisor-Installer-6.7-14320388-v480-1  Fujitsu  PartnerSupported  2019-08-08T09:57:28  2019-09-24T01:28:26
+
+
+[root@tx1310-1:~] esxcli software profile update -p Fujitsu-VMvisor-Installer-6.7-14320388-v480-1 -d /vmfs/volumes/SanDiskSSD/VMware-ESXi-6.7.0-14320388-Fujitsu-v480-1-offline_bundle.zip
+
+
+Update Result
+   Message: The update completed successfully, but the system needs to be rebooted for the changes to be effective.
+   Reboot Required: true
